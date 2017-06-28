@@ -1,0 +1,21 @@
+
+Hi DoDung Vu,
+
+Your account has been activated on the Mammouth-Parallel (Mp2) and Mammouth-Serial (Ms2) compute servers. You can connect to your interactive nodes using the SSH procotol at the following addresses:
+
+gkaddoum-mp2.ccs.usherbrooke.ca
+gkaddoum-ms.ccs.usherbrooke.ca
+
+Login : dungvu17
+
+Password : Use the same password as on the Calcul Québec portal
+
+On-line documentation:
+
+    https://wiki.calculquebec.ca/w/Accueil
+    https://wiki.calculquebec.ca/w/Connecting_and_transferring_files
+
+For technical assistance, please contact us using either one of these email addresses:
+
+    mammouth@calculquebec.ca
+    mammouth@computecanada.ca 

@@ -1,0 +1,82 @@
+
+############################################################################################################
+I. Working with Matlab
+############################################################################################################
+
+1. Register the account at canadacomputer
+link: https://ccdb.computecanada.ca/
+
+2. login server by using the ssh protocol
+
+e.g., $ ssh dungvu17@gkaddoum-mp2.ccs.usherbrooke.ca
+
+3. Write a script and submit them by following
+
++ copy and transfer file
+
+https://wiki.calculquebec.ca/w/Connecting_and_transferring_files
+
++ submit a job
+
+https://wiki.calculquebec.ca/w/Running_jobs#tab=tab4
+
+e.g.,
+
+[dungvu17@ip04-mp2 dungvu]$ qsub singlecore.pbs -A fnr-000-
+01                                                         
+763418.mp2.m
+[dungvu17@ip04-mp2 dungvu]$ qstat -a -u dungvu17
+
+mp2.m: 
+                                                                                  Req'd    Req'd       Elap
+Job ID                  Username    Queue    Jobname          SessID  NDS   TSK   Memory   Time    S   Time
+----------------------- ----------- -------- ---------------- ------ ----- ------ ------ --------- - ---------
+763418.mp2.m            dungvu17    qwork4   matlab_job        21873     1      1    --   00:01:00 R  00:00:10
+
+
+##############################################################################################################
+II. Working with R programming
+##############################################################################################################
+To get the full power of the module, you need to import all of these
+
+For R 3.0.1 or R 3.3.2
+
+module add gcc/5.2.0 xz/5.2.2 intel64/15.3.187 openmpi/1.10.0_intel15
+module add bzip2/1.0.6 pcre/8.39 curl/7.52.1 tiff/4.0.3 jdk/8u45
+mpfr64/3.1.5 zlib/1.2.8
+module add R/3.3.2
+
+For R 3.3.0 (with bioinformatic packages)
+module add gcc/6.1.0 xz/5.2.2 intel64/15.3.187 tiff/4.0.3
+module add bioinformatics/R/3.3.0
+
+
+After that, we launch R by
+$ R
+>
+if we make the script and want to compile this one,
+
+$ vim hello_world.R
+
+$ Rscript hello_world.R
+
+##############################################################################################################
+III. Working with Python Programming
+##############################################################################################################
+
+
+$ module avail python
+$ module load python64/3.4.0
+$ virtualenv ENV
+$ pyvenv ENV
+$ source ENV/bin/activate
+$ pip install <packages>
+$ python
+>>
+
+if we make the scirpt and want to compile this one
+
+$ vim hello_world.py
+$ python hello_world.py
+$ deactivate
+
